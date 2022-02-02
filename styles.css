@@ -1,0 +1,98 @@
+:root {
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%); }
+ * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; }
+html {
+	font size: 15px; }
+body {
+	font-family: 'Spartan', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background:  no-repeat url(images/bg-pattern-top-desktop.svg) left top,
+	  						no-repeat url(images/bg-pattern-bottom-desktop.svg) right bottom; }
+.container {
+	display: grid;
+	width: 70%;
+	grid-gap: 30px;
+	grid-template-rows: repeat(2, 1fr) ;
+	grid-template-columns: repeat(6, 1fr) ;
+	grid-template-areas: "title title title star star star"  
+		  									"coltron coltron irene irene anne anne" ;}
+.title {
+	grid-area: title;
+	width: 480px; }
+.container__star {
+	grid-area: star; }
+.star {
+	width: 450px;
+	background-color: var(--light-grayish-magenta);
+	display: flex;
+	padding: 20px;
+	margin-bottom: 20px;
+	border-radius: 10px; }
+.two {
+	margin-left: 50px; }
+.three {
+	margin-left:  100px; }
+.person__colton {
+	grid-area: coltron; }
+.person__irene {
+	grid-area: irene; }
+.person__anne {
+	grid-area: anne; }
+.info__star {
+	color: var(--very-dark-magenta);
+	font-size: 0.8rem;
+	font-weight: 600;
+	margin-left: 30px; }
+.container__star img {
+	margin-right: 5px; }
+.portrait {
+	border-radius: 50%;
+	width: 40px;
+	margin-right: 20px; }
+h1 {
+	color: var(--very-dark-magenta);
+	font-weight: 700; }
+h1 {
+	font-size:  3rem; }
+h3 {
+	font-size: 0.8rem;
+	color: var(--white); }
+.info__product {
+	color: var(--dark-grayish-magenta);
+	font-weight: 500; }
+span {
+	color: var(--soft-pink);
+	font-weight: 500; 
+	font-size: 0.8rem; }
+.person__colton, .person__irene, .person__anne {
+	background-color: var(--very-dark-magenta);
+	border-radius: 10px; 
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	padding: 40px; }
+.person__colton p, .person__irene p, .person__anne p {
+	color: var(--white);
+	font-size: 0.8rem;
+	line-height: 1.8; }
+.pp {
+	display: flex;
+	align-items: center; 
+	margin-bottom: 30px;}
+.name {
+	line-height: 1.5; }
+.person__irene {
+	margin-top: 20px; }
+.person__anne {
+	margin-top: 40px; }
+
